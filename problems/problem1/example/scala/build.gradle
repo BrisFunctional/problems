@@ -1,0 +1,15 @@
+apply plugin: 'scala'
+apply plugin: 'eclipse'
+
+repositories {
+	mavenCentral()
+	mavenCentral name:'scala-tools.org', urls:'http://scala-tools.org/repo-releases'
+}
+
+dependencies {
+	scalaTools 'org.scala-lang:scala-compiler:2.8.1'
+	scalaTools 'org.scala-lang:scala-library:2.8.1'
+	compile 'org.scala-lang:scala-library:2.8.1'
+	testCompile 'junit:junit-dep:4.8.2'
+	testCompile 'org.scalatest:scalatest:1.3'
+}
