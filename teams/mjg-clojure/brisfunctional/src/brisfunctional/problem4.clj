@@ -14,16 +14,6 @@
 (defn is-palindrome [n]
   (= n (number-reverser n)))
 
-(defn highest-palindrome-less-than [n]
-  
-  (def starting-val (- n 1))
-  
-  (loop [number starting-val]
-    
-    (if (is-palindrome number)
-      number
-      (recur (- number 1)))))
-
 (defn is-product-of-two-3-digit-numbers
   "Trial division from 100-999, check if 100 <= remainder <= 999" 
   [n]

@@ -15,15 +15,6 @@
 
 
 (fact
-  (highest-palindrome-less-than 100) => 99)
-
-(fact
-  (highest-palindrome-less-than 1000000) => 999999)
-
-(fact
-  (highest-palindrome-less-than 999999) => 998899)
-
-(fact
   (is-product-of-two-3-digit-numbers 12321) => true)
 
 (fact
@@ -31,10 +22,12 @@
 
 
 
-; finally!
-
 (fact
-  (take 1
+  (first
     (filter 
-      is-product-of-two-3-digit-numbers 
-      (highest-palindrome-less-than 1000000))) => 906609)
+      #(and 
+        (is-palindrome %)
+        (is-product-of-two-3-digit-numbers %))
+      (range (* 999 999) 0 -1)))
+  
+  => 906609)
