@@ -1,7 +1,7 @@
 (ns brisfunctional.test.problem2-test
   (:use [brisfunctional.problem2] :reload)
   (:use [clojure.test])
-   (:use midje.sweet))
+  (:use midje.sweet))
 
 
 (fact
