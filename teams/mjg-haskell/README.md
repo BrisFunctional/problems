@@ -6,7 +6,7 @@ I installed HUnit by first doing `apt-get install cabal-install` then `cabal ins
 
 You can run the tests by popping into `ghci` and running:
 
-`ghci> :l BrisFuncational/ProblemTests.hs`
+`ghci> :l BrisFunctional/ProblemTests.hs`
 
 then
 
