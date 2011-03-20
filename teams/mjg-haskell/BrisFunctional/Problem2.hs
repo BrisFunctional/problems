@@ -8,7 +8,7 @@ import Test.HUnit
 -- Problem 2
 -- By considering the terms in the Fibonacci sequence whose values do
 -- not exceed four million, find the sum of the even-valued terms.
---problem2 :: (Integral a) => a
+problem2 :: Integer
 problem2 = sum (filter even $ takeWhile (<4000000) [ memoized_fib x | x <- [0..] ])
 
 -- this works, but it is very slow
