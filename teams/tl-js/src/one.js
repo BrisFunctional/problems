@@ -3,7 +3,7 @@ var euler1 = function () {
 };
 
 var sum_recursive = function (num, acc) {
-    if(num >= 1000) {return acc;}
-    else if(num % 3 === 0 || num % 5 === 0) {return sum_recursive(num + 1, acc + num);}
-    else {return sum_recursive(num + 1, acc);}
+    if (num >= 1000) return acc;
+    else if (num % 3 === 0 || num % 5 === 0) return sum_recursive(num + 1, acc + num);
+    else return sum_recursive(num + 1, acc);
 };
