@@ -1,9 +1,9 @@
 primeFactor = {value, factor=2 -> 
     while (factor != value){
     while(value % factor == 0){
-        value = (BigInteger)(value/factor)
-    }
-    factor++
+            value = (BigInteger)(value/factor)
+        }
+           factor++
     }
     factor
 }
